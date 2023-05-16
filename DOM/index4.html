@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+           a{        
+            background-color: rgba(93, 252, 247, 0.645);
+            list-style: none;
+            text-decoration: none;
+            font-size: 36px;
+        }
+  </style>
+    <meta charset="UTF-8">
+    <title>Change Image on Button Click</title>
+</head>
+<body>
+  <a href="./index.html">BACK TO HOME</a>
+    <p>4. Create a web page with an image and a button. When the button is clicked, change the image to a different one.</p>
+    <button onclick="changeImage()">Change The Image</button>
+    <img src="https://img.freepik.com/free-photo/parks-mountains-reflection-mountain-decoration-garden_1417-1025.jpg" alt="" id="img1">
+    <img src="https://img.freepik.com/free-photo/green-park-view_1417-1487.jpg" alt="" id="img2">
+    <img src="https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-fresh-natural-product-poster-background-image_146684.jpg" alt="" id="img3">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4ldPy3hlEtEiZEQQ6AaaYZLySDspkr7Wmyw&usqp=CAU" alt="" id="img4">
+    <img src="https://wallpaperaccess.com/full/4121680.jpg" alt="" id="img5">
+    <img src="https://e0.pxfuel.com/wallpapers/99/188/desktop-wallpaper-love-cute-baby-couple-background-thumbnail.jpg" alt="" id="img6">
+
+<script>
+    function changeImage(){
+      let img1 = document.getElementById("img1");
+      let img2 = document.getElementById("img2");
+      let img3 = document.getElementById("img3");
+      let img4 = document.getElementById("img4");
+      let img5 = document.getElementById("img5");
+      let img6 = document.getElementById("img6");
+      
+      if(img1.style.display !== "none") {
+        img1.style.display = "none";
+        img2.style.display = "block";
+      }
+      else if(img2.style.display !== "none") {
+        img2.style.display = "none";
+        img3.style.display = "block";
+      }
+      else if(img3.style.display !== "none") {
+        img3.style.display = "none";
+        img4.style.display = "block";
+      }
+      else if(img4.style.display !== "none") {
+        img4.style.display = "none";
+        img5.style.display = "block";
+      }
+      else if(img5.style.display !== "none") {
+        img5.style.display = "none";
+        img6.style.display = "block";
+      }
+      else {
+        img6.style.display = "none";
+        img1.style.display = "block";
+      }
+    }
+</script>
+</body>
+</html>

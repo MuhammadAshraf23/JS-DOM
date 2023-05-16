@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             a{        
+            background-color: rgba(93, 252, 247, 0.645);
+            list-style: none;
+            text-decoration: none;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+  <a href="./index.html">BACK TO HOME</a>
+    <p>5.Create a web page with a button that, when clicked, displays a random quote from a list of quotes.</p>
+    <button onclick="randomQuote()">Click To New Quote</button>
+    <p id="qoutes"></p>
+    <script>
+        let qoute=[ 
+      "The best way to predict your future is to create it. - Abraham Lincoln",
+      "Believe you can and you're halfway there. - Theodore Roosevelt",
+      "Don't watch the clock; do what it does. Keep going. - Sam Levenson",
+      "The only way to do great work is to love what you do. - Steve Jobs",
+      "If you can't explain it simply, you don't understand it well enough. - Albert Einstein",
+      "Be the change you wish to see in the world. - Mahatma Gandhi",
+      "The greatest glory in living lies not in never falling, but in rising every time we fall. - Nelson Mandela",
+     "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough. - Oprah Winfrey",
+     "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success. - James Cameron",
+     "Spread love everywhere you go. Let no one ever come to you without leaving happier. - Mother Teresa"
+    ]
+  function randomQuote(){
+    let randomNum=Math.round(Math.random()*qoute.length)
+    let findQoute=document.getElementById("qoutes").innerHTML=qoute[randomNum] 
+  }
+  ////////////////////////////////////////OR///////////////
+    </script>
+</body>
+</html>

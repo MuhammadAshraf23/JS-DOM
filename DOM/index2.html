@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+               a{        
+            background-color: rgba(93, 252, 247, 0.645);
+            list-style: none;
+            text-decoration: none;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <a href="./index.html">BACK TO HOME</a>
+    <p>2.Create a web page with two buttons. When the first button is clicked, change the background color of the page to blue. When the second button is clicked, change the background color of the page to red.</p>
+    <button onclick="changeBg_Red()">Change the Bg-Color[RED]</button>
+    <button onclick="changeBg_Blue()">Change the Bg-Color[BLUE]</button>
+
+    <script>
+function changeBg_Red(color){
+    document.body.style.backgroundColor="red";
+}
+function changeBg_Blue(color){
+    document.body.style.backgroundColor="blue";
+}
+    </script>
+</body>
+</html>

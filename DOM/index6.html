@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+           a{        
+            background-color: rgba(93, 252, 247, 0.645);
+            list-style: none;
+            text-decoration: none;
+            font-size: 36px;
+        }
+  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <a href="./index.html">BACK TO HOME</a>
+<p>6.Create a web page with an input field and a button. When the button is clicked, display the length of the text entered in the input field.</p>
+    <button onclick="findLength()">Click ON</button>
+    <input type="text" id="leng">
+    <p id="find"></p>
+    <script>
+         function findLength(){    
+           let result= document.getElementById("leng").value.length
+           document.getElementById("find").innerHTML=result
+         }
+    </script>
+</body>
+</html>
